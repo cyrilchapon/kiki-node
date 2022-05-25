@@ -10,7 +10,7 @@ En NodeJS, ce mécanisme est divisé en 4 parties très simples :
 
 Comment l'utiliser ? J'ai menti tout à l'heure quand j'ai dis qu'en installant NodeJS vous installiez simplement la commande `node`.
 
-En fait, vous avez aussi installé une autre commande : `npm`.Essayez là dans votre console !
+En fait, vous avez aussi installé une autre commande : `npm`. Essayez là dans votre console !
 ```sh
 npm -v
 ```
