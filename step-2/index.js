@@ -15,7 +15,7 @@ console.log('## document ?')
 if (typeof document !== 'undefined')
   console.log(document)
 else
-  console.log('vide')
+  console.log('nope')
 console.log('--------------------------------')
 
 // Ni même de "fenêtre", en fait
@@ -23,7 +23,7 @@ console.log('## window ?')
 if (typeof window !== 'undefined')
   console.log(window)
 else
-  console.log('vide')
+  console.log('nope')
 console.log('--------------------------------')
 
 
@@ -40,6 +40,6 @@ console.log('--------------------------------')
 // comme le chemin du fichier
 // en cours d'exécution
 console.log('## __filename ?')
-console.log(__filename ?? 'vide')
+console.log(__filename)
 console.log('--------------------------------')
 
