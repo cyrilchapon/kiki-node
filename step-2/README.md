@@ -29,4 +29,4 @@ L'environnement par contre est différent :
   ```
   node index.js
   ```
-3. (en oubliant pas de vous mettre à la racine de step-2-environment)
+3. (en oubliant pas de vous mettre à la racine de step-2)
