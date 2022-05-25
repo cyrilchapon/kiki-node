@@ -10,26 +10,23 @@ console.log('--------------------------------')
 
 
 
-// Par contre, il n'y a pas de "document" HTML
+// Par contre, il n'y a pas de "document"
 console.log('## document ?')
-if (typeof document !== 'undefined')
-  console.log(document)
-else
-  console.log('nope')
+// console.log(document) // <== ÇA PLANTE
+console.log('nope')
 console.log('--------------------------------')
 
 // Ni même de "fenêtre", en fait
 console.log('## window ?')
-if (typeof window !== 'undefined')
-  console.log(window)
-else
-  console.log('nope')
+// console.log(window) // <== ÇA PLANTE
+console.log('nope')
 console.log('--------------------------------')
 
 
 
-// À la place, on a "process" : c'est
-// un objet qui représente le processus.
+// À la place, on a "process",
+// c'est un objet qui représente
+// le processus en cours d'exécution
 // ( Logique non ? )
 console.log('## process ?')
 console.log(`${process.platform} ${process.arch}`)
