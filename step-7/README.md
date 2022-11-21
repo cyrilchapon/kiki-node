@@ -170,3 +170,13 @@ Réponse
   "artistId": 1
 }
 ```
+
+--------------
+
+⚠️ Ne fais pas de base de données pour cette première version
+Stocke les objets dans 2 arrays en mémoire comme un sauvage :
+
+```
+artists = []
+arts = []
+```
