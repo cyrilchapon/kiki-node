@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
+    "build": "tsc --noEmit",
     "tsc": "tsc",
     "lint": "eslint src",
     "fix": "eslint src --fix",
