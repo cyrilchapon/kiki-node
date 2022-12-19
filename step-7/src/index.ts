@@ -1,18 +1,28 @@
-import { data as artists } from './artists'
-import { data as arts } from './arts'
 import http from 'http'
 import express from 'express'
 
-var app = express();
-var server = http.createServer(app);
+import { appEnv } from './util/env'
+import { zodToBoom } from './util/validation'
+import { handleBoom } from './util/boom'
 
-app.set('json spaces', 2)
+import { artistsRouter } from './routes/artists'
+import { artsRouter } from './routes/art'
 
-app.get('/artists', (req, res) => {
-  res.json(artists)
-})
+const app = express()
+const server = http.createServer(app)
 
-const PORT = 1234
-server.listen(PORT, () => {
-  console.log(`Magic happens on port ${PORT}`)
+if (appEnv.NODE_ENV !== 'production') {
+  app.set('json spaces', 2)
+}
+
+app.use(express.json())
+
+app.use('/artists', artistsRouter)
+app.use('/arts', artsRouter)
+
+app.use(zodToBoom)
+app.use(handleBoom)
+
+server.listen(appEnv.PORT, () => {
+  console.log(`Magic happens on port ${appEnv.PORT}`)
 })

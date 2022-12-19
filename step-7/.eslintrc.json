@@ -1,0 +1,7 @@
+{
+  "ignorePatterns": [".eslintrc.json", ".prettierrc.json"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ]
+}
